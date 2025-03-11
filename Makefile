@@ -36,7 +36,7 @@ deploy: # Deploy the project artefact to the target environment @Pipeline
 		}' \
 		--targets '[{"Key":"tag:Name","Values":[$INSTANCE_NAME]}]' \
 		--region eu-west-2 \
-    	--association-name $INSTANCE_NAME
+		--association-name $INSTANCE_NAME
 
 clean:: # Clean-up project resources (main) @Operations
 	# TODO: Implement project resources clean-up step
