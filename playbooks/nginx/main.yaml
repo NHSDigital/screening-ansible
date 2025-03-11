@@ -1,0 +1,12 @@
+- name: Install and start Nginx
+  hosts: depe3
+  become: yes
+
+  tasks:
+    - name: Create test file
+      lineinfile:
+        dest: /root/test
+        line: "This is a test file, please delete"
+        state: present
+        create: yes
+        mode: "0644"
